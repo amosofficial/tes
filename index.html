@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Playlist Link</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        /* Add styles for your link and image */
+#playlist-link {
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+#playlist-link img {
+    width: 200px; /* Adjust the size as needed */
+    border: 2px solid #000; /* Add a border or other styles */
+}
+
+#playlist-content {
+    display: none; /* Hide the playlist content initially */
+}
+    </style>
+</head>
+<body>
+    <a href="#" id="playlist-link">
+        <img src="https://play-lh.googleusercontent.com/tUE9H0SOxLctlX4XArD8M6jgbFU6fIkos4nHqcG5V0xMIgstASgNXOjQ8vJczJUKHwA" alt="Playlist Cover">
+    </a>
+    <div id="playlist-content">
+        <div class="music-player">
+            <h3>Alan walker - on my way</h3>
+            <audio id="music" src="web playlist/Alan Walker, Sabrina Carpenter & Farruko  - On My Way.mp3" controls></audio>
+            <button id="play-pause">Play</button>
+        </div>
+      <br>
+      <div class="music-player">
+            <h3>DANCE HALL</h3>
+            <audio id="music" src="playme/DANCEHALL 2020 VIDEO MIX, AFROBEATS 2020, REGGAE 2020, AFRO BASHMENT, AFROFUSION (KOFFEE _BURNA BOY) ( 128kbps ).mp3" controls></audio>
+            <button id="play-pause">Play</button>
+        </div>
+      <br>
+      <div class="music-player">
+    <h3>Alan walker - play</h3>
+            <audio id="music" src="playme/DANCEHALL 2020 VIDEO MIX, AFROBEATS 2020, REGGAE 2020, AFRO BASHMENT, AFROFUSION (KOFFEE _BURNA BOY) ( 128kbps ).mp3" controls></audio>
+            <button id="play-pause">Play</button>
+        </div>
+      
+    </div>
+    <script >// Get the link and playlist content elements
+        const playlistLink = document.getElementById('playlist-link');
+        const playlistContent = document.getElementById('playlist-content');
+        
+        // Add a click event listener to the link
+        playlistLink.addEventListener('click', function (e) {
+            e.preventDefault(); // Prevent the default link behavior
+        
+            // Check if the playlist content is currently hidden
+            if (playlistContent.style.display === 'none') {
+                playlistContent.style.display = 'block'; // Show the playlist content
+            } else {
+                playlistContent.style.display = 'none'; // Hide the playlist content
+            }
+        });</script>
+</body>
+</html>

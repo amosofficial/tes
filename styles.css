@@ -1,0 +1,14 @@
+#playlist-link {
+    text-decoration: none;
+    display: inline-block;
+    margin: 20px;
+}
+
+#playlist-link img {
+    width: 200px; /* Adjust the size as needed */
+    border: 2px solid #000; /* Add a border or other styles */
+}
+
+#playlist-content {
+    display: none; /* Hide the playlist content initially */
+}
